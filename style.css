@@ -8,34 +8,85 @@
   --font-size: 16px;
 }
 /* nav bar started */
-.nav-bar{
-    background: #f3f2f2;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 40px;
-    align-items: center;
+.nav-bar {
+  background: #fff;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  align-items: center;
 }
-.nav-bar .logo{
-    font-size: calc(var(--font-size) * 1.4);
+.nav-bar .logo {
+  font-size: calc(var(--font-size) * 1.4);
 }
-.nav-ul{
-    display: flex;
-    justify-content: space-around;
-    gap: 40px;
-    list-style-type: none;
-    align-items: center;
+.nav-ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  list-style-type: none;
+  align-items: center;
 }
-.nav-ul .nav-li-1{
-    color: #1090CB;
+.nav-ul .nav-li-1 {
+  color: #1090cb;
 }
-.nav-ul .nav-li-5 button{
-    padding: 10px 17px;
-    border-radius: 10px;
-    color: #fff;
-    background-color: #1090CB;
-    border: none;
+.nav-ul .nav-li-5 button {
+  padding: 10px 17px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #1090cb;
+  border: none;
 }
-.nav-ul .nav-li-5 button:hover{
-    background-color: #087bb1;
+.nav-ul .nav-li-5 button:hover {
+  background-color: #087bb1;
+}
+/* nav bar finished */
+
+/* banner started */
+.banner {
+  background-color: rgb(232, 244, 250);
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.banner-content {
+  width: 50%;
+}
+.banner-title {
+  font-size: calc(var(--font-size) * 2.5);
+  margin-bottom: 20px;
+}
+.banner-title span {
+  color: #1090cb;
+}
+.banner-description {
+  color: #5c5c5c;
+  font-size: calc(var(--font-size) * 1);
+  font-weight: 400;
+  line-height: 204.3%; /* 32.688px */
+  margin-bottom: 40px;
+}
+.banner-btn {
+  display: flex;
+  gap: 20px;
+}
+.banner-btn-1 {
+  color: #fff;
+  font-size: calc(var(--font-size) * 1);
+  font-weight: 400;
+  line-height: 204.3%; /* 32.688px */
+  border-radius: 10px;
+  background: #1090cb;
+  padding: 10px 40px;
+  border: none;
+}
+.banner-btn-2 {
+  color: #1090cb;
+  font-size: calc(var(--font-size) * 1);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 204.3%; /* 32.688px */
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: 1px solid #1090cb;
 }
