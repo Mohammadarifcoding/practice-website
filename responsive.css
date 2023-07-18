@@ -44,7 +44,10 @@
     padding: 0 30px;
     gap: 50px;
   }
-  
+  .update-news-container{
+    grid-template-columns: repeat(1,1fr);
+    padding: 0px;
+  }
 }
 
 /* small medium device */
@@ -79,6 +82,10 @@
     padding: 0 30px;
     gap: 50px;
   }
+  .update-news-container{
+    grid-template-columns: repeat(1,1fr);
+    padding: 0px;
+  }
 }
 
 /* medium device */
@@ -109,5 +116,15 @@
     flex-direction: column-reverse;
     padding: 0 30px;
     gap: 50px;
+  }
+  .update-news-container{
+    grid-template-columns: repeat(2,1fr);
+    padding: 0px;
+  }
+}
+@media screen and (min-width:993px) and (max-width:1112px) {
+  .update-news-container{
+    grid-template-columns: repeat(2,1fr);
+    padding: 0px;
   }
 }
