@@ -265,7 +265,7 @@ letter-spacing: 0.16px;
 .update-news-container{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  padding: 0px 200px;
+  padding: 0px;
   gap: 30px;
   justify-items:center;
 }
