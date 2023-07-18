@@ -58,6 +58,15 @@
     width: 80%;
     padding-top: 50px;
   }
+  .brand-name-container{
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 40px;
+  }
+  .brand-name{
+    flex-direction: column;
+    text-align: center;
+   
+  }
 }
 
 /* medium device */
@@ -71,5 +80,17 @@
   .banner-content{
     width: 90%;
     padding-top: 50px;
+  }
+  .brand-name-container{
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 40px;
+  }
+  .brand-name{
+    flex-direction: column;
+    text-align: center;
+   
+  }
+  .brand-name-last{
+      grid-column: 1 / 4;
   }
 }
