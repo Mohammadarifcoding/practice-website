@@ -35,7 +35,14 @@
   .brand-name{
     flex-direction: column;
     text-align: center;
+    
    
+  }
+
+  .vision-full{
+    flex-direction: column-reverse;
+    padding: 0 30px;
+    gap: 50px;
   }
   
 }
@@ -67,6 +74,11 @@
     text-align: center;
    
   }
+  .vision-full{
+    flex-direction: column-reverse;
+    padding: 0 30px;
+    gap: 50px;
+  }
 }
 
 /* medium device */
@@ -92,5 +104,10 @@
   }
   .brand-name-last{
       grid-column: 1 / 4;
+  }
+  .vision-full{
+    flex-direction: column-reverse;
+    padding: 0 30px;
+    gap: 50px;
   }
 }
