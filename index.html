@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,6 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://kit.fontawesome.com/6c9c8f09de.js"
       crossorigin="anonymous"
@@ -21,7 +28,63 @@
     <!-- header started -->
     <header class="header">
       <!-- nav-started -->
-      <nav class="nav-bar">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl flex items-center"
+            ><img class="w-10" src="logo.png" alt="" /> Freelancing carrer</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>New batch</a></li>
+            <li tabindex="0">
+              <details>
+                <summary>Course</summary>
+                <ul class="p-2">
+                  <li><a href="">Students Review</a></li>
+                  <li><a href="">Course module</a></li>
+                  <li><a href="">Course contents</a></li>
+                  <li><a href="">Students works</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- <nav class="nav-bar">
         <div class="logo">
           <h2>FIntech</h2>
         </div>
@@ -32,29 +95,31 @@
           <li class="nav-li-4">Blog</li>
           <li class="nav-li-5"><button>Contact Us</button></li>
         </div>
-      </nav>
+      </nav> -->
       <!-- nav finished -->
 
       <!-- banner started -->
       <section class="banner">
         <div class="banner-content">
           <h2 class="banner-title">
-            Experienced <span>mobile and web</span> applications and website
-            builders measuring.
+            Learn <span class="color-text">design</span> from your own
+            <span class="color-text">mobile</span>.
           </h2>
           <p class="banner-description">
-            KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
-            applications and website builders measuring dozens of completed
-            projects. We build and develop mobile applications for several top
-            platforms, including Android & IOS.
+            At our design school, master the art of Canva and design like a pro
+            with hands-on training, inspiring projects, and personalized
+            guidance
           </p>
           <div class="banner-btn">
             <button class="banner-btn-1">Contact Us</button>
-            <button class="banner-btn-2">View more</button>
+            <button class="banner-btn-2">Download course module</button>
           </div>
         </div>
         <div class="banner-image">
           <img src="Bill Sitting using laptop 1.png" alt="" />
+          <div class="banner-overlay">
+            <img class="w-full" src="Canva_icon_2021.svg.png" alt="" />
+          </div>
         </div>
       </section>
 
@@ -67,31 +132,35 @@
       <!-- brand name started -->
       <section class="brand-name-container">
         <div class="brand-name">
-          <img class="brand-logo-1" src="icon/website-content 1.svg" alt="" />
+          <img class="brand-logo-1" src="24 hour.png" alt="" />
           <div class="brand-text">
-            <h4 class="brand-title">Web Application</h4>
-            <p class="brand-description">Lorem Ipsum is simply</p>
+            <h4 class="brand-title">24 hour support</h4>
+            <p class="brand-description">We will provide 24 hour support</p>
           </div>
         </div>
         <div class="brand-name">
-          <img class="brand-logo-2" src="icon/seo-tag 1.svg" alt="" />
+          <img class="brand-logo-1" src="video.png" alt="" />
           <div class="brand-text">
-            <h4 class="brand-title">SEO</h4>
-            <p class="brand-description">Lorem Ipsum is simply</p>
+            <h4 class="brand-title">20+ live video</h4>
+            <p class="brand-description">20+ live video in Zoom</p>
           </div>
         </div>
         <div class="brand-name">
-          <img class="brand-logo-3" src="icon/immersive 1.svg" alt="" />
+          <img class="brand-logo-3" src="access.png" alt="" />
           <div class="brand-text">
-            <h4 class="brand-title">AR/VR Solutions</h4>
-            <p class="brand-description">Lorem Ipsum is simply</p>
+            <h4 class="brand-title">Unlimited Access</h4>
+            <p class="brand-description">
+              You will get unlimited access to our group
+            </p>
           </div>
         </div>
         <div class="brand-name brand-name-last">
-          <img class="brand-logo-4" src="icon/coding (1) 1.svg" alt="" />
+          <img class="brand-logo-3" src="assignment.png" alt="" />
           <div class="brand-text">
-            <h4 class="brand-title">Mobile Applications</h4>
-            <p class="brand-description">Lorem Ipsum is simply</p>
+            <h4 class="brand-title">20+ Assignment</h4>
+            <p class="brand-description">
+              20+ Assignment to make your skill grow up
+            </p>
           </div>
         </div>
       </section>
@@ -103,31 +172,34 @@
         <div class="vision-1 vision-full">
           <div class="vision-1-img vision-img">
             <img src="17. Recent Activities 1.png" alt="" />
+            <div class="vision-overlay">
+              <img class="w-full" src="Canva_icon_2021.svg.png" alt="" />
+            </div>
           </div>
           <div class="vision-1-content vision-content">
             <h3 class="vision-1-header vision-header">
               <i class="fa-solid fa-face-smile-beam"></i>
-              <div class="vision-header-content">
+              <!-- <div class="vision-header-content">
                 <h3 class="vision-header-content-title">
                   Lorem Ipsum is simply dummy text
                 </h3>
                 <p class="vision-header-content-description">
                   Lorem Ipsum is simply dummy text
                 </p>
-              </div>
+              </div> -->
             </h3>
             <h2 class="vision-1-title vision-title">
-              Lorem Ipsum is simply dummy text of the printing.
+              Now learning design from
+              <span class="color-text"> mobile </span>is much more easy
             </h2>
             <p class="vision-1-description vision-description">
-              KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
-              applications and website builders measuring dozens of completed
-              projects. We build and develop mobile applications for several top
-              platforms, including Android & IOS.
+              Learning design by ownself is very hard. You can join with us to
+              enhance your design skill. We will give you proper mentorship. Our
+              teachers will always be with you.
             </p>
           </div>
         </div>
-        <div class="vision-2 vision-full">
+        <!-- <div class="vision-2 vision-full">
           <div class="vision-2-img vision-img">
             <img src="website-mockup-png-10 1.png" alt="" />
           </div>
@@ -183,26 +255,79 @@
               platforms, including Android & IOS.
             </p>
           </div>
-        </div>
+        </div> -->
       </section>
 
-      <section class="update">
+      <section class="update" id="update">
         <h1 class="update-h1">Latest news Updates</h1>
         <div class="update-news-container">
           <div class="update-news">
-            <img src="update/Rectangle 20.png" alt="" class="news-img" />
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Gr5k18jn5z8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <div class="news-content">
               <h3 class="news-content-title">
-                Lorem Ipsum is simply dummy text of the printing.
+                Md Rakibul
               </h3>
               <p class="news-content-description">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the .
+                Batch 2
               </p>
             </div>
           </div>
           <div class="update-news">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mPC_XJmofPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="news-content">
+              <h3 class="news-content-title">
+                Md Rakibul
+              </h3>
+              <p class="news-content-description">
+                Batch 2
+              </p>
+            </div>
+          </div>
+          <div class="update-news">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zgAUyAdkRTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="news-content">
+              <h3 class="news-content-title">
+                Md Rakibul
+              </h3>
+              <p class="news-content-description">
+                Batch 2
+              </p>
+            </div>
+          </div>
+          <!-- <div class="update-news">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FW1LOP09RM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="news-content">
+              <h3 class="news-content-title">
+                Md Rakibul
+              </h3>
+              <p class="news-content-description">
+                Batch 2
+              </p>
+            </div>
+          </div>
+          <div class="update-news">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FW1LOP09RM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="news-content">
+              <h3 class="news-content-title">
+                Md Rakibul
+              </h3>
+              <p class="news-content-description">
+                Batch 2
+              </p>
+            </div>
+          </div>
+          <div class="update-news">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FW1LOP09RM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="news-content">
+              <h3 class="news-content-title">
+                Md Rakibul
+              </h3>
+              <p class="news-content-description">
+                Batch 2
+              </p>
+            </div>
+          </div> -->
+          <!-- <div class="update-news">
             <img src="update/Rectangle 21.png" alt="" class="news-img" />
             <div class="news-content">
               <h3 class="news-content-title">
@@ -266,12 +391,12 @@
                 text ever since the .
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <!-- vision started -->
 
-      <section class="service">
+      <!-- <section class="service">
         <h2 class="service-title">Our best selling products</h2>
         <div class="service-product-container">
           <div class="service-product">
@@ -302,7 +427,7 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- main finished -->
 
