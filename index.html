@@ -29,6 +29,49 @@
     <header class="header">
       <!-- nav-started -->
       <div class="navbar bg-base-100">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <label tabindex="0" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </label>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a href="#About-Us">About Us</a></li>
+        <li>
+          <a>Course</a>
+          <ul class="p-2">
+            <li><a href="#update">Students Review</a></li>
+            <li><a href="">Course module</a></li>
+            <li><a href="">Students works</a></li>
+          </ul>
+        </li>
+        <li><a>New Batch</a></li>
+      <li><a href="#brand">Our featured</a></li>
+      </ul>
+    </div>
+    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a href="#About-Us">About Us</a></li>
+      <li tabindex="0">
+        <details>
+          <summary>Course</summary>
+          <ul class="p-2">
+            <li><a href="#review">Students Review</a></li>
+            <li><a href="">Course module</a></li>
+            <li><a href="">Students works</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a>New Batch</a></li>
+      <li><a href="#brand">Our featured</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a class="btn" href="#more">Explore More</a>
+  </div>
+</div>
+      <!-- <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -83,7 +126,7 @@
             <li><a href="#">About Us</a></li>
           </ul>
         </div>
-      </div>
+      </div> -->
       <!-- <nav class="nav-bar">
         <div class="logo">
           <h2>FIntech</h2>
@@ -99,7 +142,7 @@
       <!-- nav finished -->
 
       <!-- banner started -->
-      <section class="banner">
+      <section class="banner" id="more">
         <div class="banner-content">
           <h2 class="banner-title">
             Learn <span class="color-text">design</span> from your own
@@ -130,7 +173,7 @@
     <!-- main started -->
     <main class="main">
       <!-- brand name started -->
-      <section class="brand-name-container">
+      <section class="brand-name-container" id="brand">
         <div class="brand-name">
           <img class="brand-logo-1" src="24 hour.png" alt="" />
           <div class="brand-text">
@@ -168,7 +211,7 @@
 
       <!-- vision started -->
 
-      <section class="vision">
+      <section class="vision" id="About-Us">
         <div class="vision-1 vision-full">
           <div class="vision-1-img vision-img">
             <img src="17. Recent Activities 1.png" alt="" />
@@ -259,7 +302,7 @@
       </section>
 
       <section class="update" id="update">
-        <h1 class="update-h1">Latest news Updates</h1>
+        <h1 class="update-h1">Our students reviews</h1>
         <div class="update-news-container">
           <div class="update-news">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Gr5k18jn5z8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -294,17 +337,6 @@
               </p>
             </div>
           </div>
-          <!-- <div class="update-news">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/FW1LOP09RM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="news-content">
-              <h3 class="news-content-title">
-                Md Rakibul
-              </h3>
-              <p class="news-content-description">
-                Batch 2
-              </p>
-            </div>
-          </div>
           <div class="update-news">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/FW1LOP09RM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <div class="news-content">
@@ -326,7 +358,18 @@
                 Batch 2
               </p>
             </div>
-          </div> -->
+          </div>
+          <div class="update-news">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FW1LOP09RM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="news-content">
+              <h3 class="news-content-title">
+                Md Rakibul
+              </h3>
+              <p class="news-content-description">
+                Batch 2
+              </p>
+            </div>
+          </div>
           <!-- <div class="update-news">
             <img src="update/Rectangle 21.png" alt="" class="news-img" />
             <div class="news-content">
@@ -396,7 +439,7 @@
       </section>
       <!-- vision started -->
 
-      <!-- <section class="service">
+      <section class="service">
         <h2 class="service-title">Our best selling products</h2>
         <div class="service-product-container">
           <div class="service-product">
@@ -427,7 +470,7 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- main finished -->
 
